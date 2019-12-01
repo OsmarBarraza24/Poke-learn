@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');
+
+.text-justify{
+    text-align: justify;
+}
+
+#user-image{
+    height: 40px;
+    width: 40px;
+    border-radius: 360px;
+    border: 1px solid black;
+}
+
+.navbar{
+    background-color:#ef4036!important ;
+}
+
+.nav-item li{
+    font-family: 'Alata', sans-serif;
+}
+
+
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Public Sans', sans-serif;
+}
+
+.mi-button{
+    border-radius: 8px;
+    padding: 8px;
+    height: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.btn{
+    border-radius: 20px;
+}
+
+header{
+    position: absolute;
+    z-index: 10;
+    width:100%;
+}
+
+.banner{
+    position: relative;
+    background: url('../images/246803_pokemon-wallpaper-hd.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0 200px;
+}
+
+.firstP, .secondP, .thirthP{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.60;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    letter-spacing: 8px;
+    font-size: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 30px;
+}
+
+.ptext .border{
+    background-color: red;
+    color:white;
+    padding:20px;
+    border-color: 0.10px;
+}
+.firstP{
+    background-image: url('../images/background1.jpg');
+    min-height: 400px;
+}
