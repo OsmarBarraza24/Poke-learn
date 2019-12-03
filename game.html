@@ -11,30 +11,31 @@
   <title>Mix-Or-Match</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light">
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top ">
         <a href="#" class="navbar-brand">Poke-Learn</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#pokeNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div id="pokeNav" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto"">
+            <ul class="navbar-nav mr-auto"">
+                <li class="nav-item"><a  class="nav-link" href="index.html">Inicio</a></li>
                 <li class=" nav-item"><a class="nav-link" href="games.html">Juegos</a></li>
                 <li class="nav-item"></li>
-                <li class="nav-item"><a class="nav-link" href="#">Aprendiendo</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+                <li class="nav-item"><a class="nav-link" href="aprendiendo.html">Aprendiendo</a></li>
+                <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
             </ul>
     </nav>
-  <h1 class="page-title">Mix-Or-Match</h1>
+  <h1 class="page-title">¡Gira y recuerda!</h1>
   <div class="overlay-text visible">
-    Click to Start
+    Haz click para iniciar
   </div>
   <div id="game-over-text" class="overlay-text">
-    GAME OVER
-    <span class="overlay-text-small">Click to Restart</span>
+    ¡Perdiste!
+    <span class="overlay-text-small">Haz click para reiniciar</span>
   </div>
   <div id="victory-text" class="overlay-text">
-    VICTORY
-    <span class="overlay-text-small">Click to Restart</span>
+    ¡GANASTE!
+    <span class="overlay-text-small">Haz click para reiniciar</span>
   </div>
 
   <div class="game-container">
@@ -203,5 +204,16 @@
     </div>
   </div>
 
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <a class="btn btn-danger" href="games.html">Salir</a>
+      </div>
+    </div>
+  </div>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
 </body>
 </html>

@@ -7,24 +7,102 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="https://kit.fontawesome.com/90dc9c86e3.js" crossorigin="anonymous"></script>
     <title>Juegos</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light ">
-        <a href="#" class="navbar-brand">Poke-Learn</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#pokeNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="pokeNav" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto"">
-                <li class=" nav-item"><a class="nav-link" href="games.html">Juegos</a></li>
-                <li class="nav-item"></li>
-                <li class="nav-item"><a class="nav-link" href="#">Aprendiendo</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
-            </ul>
-    </nav>
-    <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top ">
+                <a href="#" class="navbar-brand">Poke-Learn</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#pokeNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="pokeNav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto"">
+                        <li class="nav-item"><a  class="nav-link" href="index.html">Inicio</a></li>
+                        <li class=" nav-item"><a class="nav-link" href="games.html">Juegos</a></li>
+                        <li class="nav-item"></li>
+                        <li class="nav-item"><a class="nav-link" href="aprendiendo.html">Aprendiendo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
+                    </ul>
+            </nav>
+    <div class="animated fadeInLeft jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Juegos disponibles</h1>
+            <p class="lead">En este sección encontrarás todos los juegos que hay disponibles por el momento.
+                ¡Recuerda que al final tendrás la oportunidad de capturar algún pokemón misterioso!
+            </p>
+        </div>
+    </div>
+    <div class="container animated fadeIn ">
+        <div class="row d-flex justify-content-lg-between justify-content-sm-center">
+            <div class="col-lg-4 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/pokebola.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">¡Gira y recuerda!</h5>
+                        <p class="card-text">¡Gira las tarjetas y recuerda cual era su par! Recuerda muy bien
+                            en donde estaba cada pokemón.<a style="cursor: alias;" data-toggle="modal"
+                                data-target="#exampleModalLong"><i class="fas fa-info-circle"></i></a>
+                        </p>
+                        <a href="game.html" class="btn btn-danger">Jugar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                            <img src="images/pokebola.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">¡Gira y recuerda!</h5>
+                                <p class="card-text">¡Gira las tarjetas y recuerda cual era su par! Recuerda muy bien
+                                    en donde estaba cada pokemón.<a style="cursor: alias;" data-toggle="modal"
+                                        data-target="#exampleModalLong"><i class="fas fa-info-circle"></i></a>
+                                </p>
+                                <a href="game.html" class="btn btn-danger">Jugar</a>
+                            </div>
+                        </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                            <img src="images/pokebola.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">¡Gira y recuerda!</h5>
+                                <p class="card-text">¡Gira las tarjetas y recuerda cual era su par! Recuerda muy bien
+                                    en donde estaba cada pokemón.<a style="cursor: alias;" data-toggle="modal"
+                                        data-target="#exampleModalLong"><i class="fas fa-info-circle"></i></a>
+                                </p>
+                                <a href="game.html" class="btn btn-danger">Jugar</a>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Juegos de memoria</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Es un juego con una dinámica sencilla, fácil de comprender incluso por los más pequeños. Imprime un
+                    ambiente de emoción y suspenso entre los participantes. Pero no es solo la emoción lo que lo
+                    caracteriza.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    <div class="container">
         <div class="row">
             <div class="col">
                 <h1 class="display-1">Juegos disponibles</h1>
@@ -32,7 +110,7 @@
             <div class="w-100">
                 <div class="col">
                     <div class="card" style="width: 18rem;">
-                        <img src="images/pokebola.jpg" class="card-img-top" alt="...">
+                        <img src="images/pokebola.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">¡Gira y recuerda!</h5>
                             <p class="card-text">¡Gira las tarjetas y recuerda cual era su par. Al finalizar cada juego,
@@ -43,7 +121,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -30,7 +30,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   text-align: center;
-  font-size: 6em;
+  font-size: 2em;
 }
 
 .game-info-container {
@@ -41,7 +41,7 @@ body {
 
 .game-info {
   color: blue;
-  font-size: 4em;
+  font-size: 1em;
 }
 
 .game-container {
@@ -50,14 +50,14 @@ body {
   grid-template-columns: repeat(4, auto);
   grid-gap: 10px;
   justify-content: center;
-  perspective: 500px;
+  perspective: 400px;
 }
 
 .card {
   position: relative;
   cursor: url("Assets/Cursors/Pokéball.cur"), auto;
-  height: 175px;
-  width: 125px;
+  height: 155px;
+  width: 105px;
 }
 
 .card-face {

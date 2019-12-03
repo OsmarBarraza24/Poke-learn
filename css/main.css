@@ -87,3 +87,14 @@ header{
     background-image: url('../images/background1.jpg');
     min-height: 400px;
 }
+
+.card{
+transition:all .1s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
