@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <title>Aprende con pokemon</title>
 </head>
 
 <body>
@@ -23,11 +23,12 @@
                     <li class=" nav-item"><a class="nav-link" href="games.html">Juegos</a></li>
                     <li class="nav-item"></li>
                     <li class="nav-item"><a class="nav-link" href="aprendiendo.html">Aprendiendo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
+                    <li class="nav-item"><a id="nombre" class="nav-link" href="perfil.html">Perfil</a></li>
                 </ul>
         </nav>
         </div>
     </header>
+    
     <section class="banner">
         <div class="container">
             <div class="row">
@@ -51,7 +52,7 @@
     <div class="container">
         <div class="row justify-content-around">
             <div class="col-lg-6 col-sm-12 ">
-                <h1 class="d-lg-flex justify-content-end display-4 text-center">Loasdrem Ipsum</h1>
+                <h1 id="nombre" class="d-lg-flex justify-content-end display-4 text-center">Hola amigos</h1>
                 <p style="text-align: justify;" class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Assumenda, laborum pariatur sit, obcaecati sint repudiandae minus aspernatur velit, placeat vero
                     culpa quae fuga in. Ab tempora in necessitatibus eligendi temporibus.</p>
@@ -114,8 +115,6 @@
         </div>
     </div>
 
-
-
     <section class="section">
     </section>
     <div class="container">
@@ -137,6 +136,10 @@
 
     </div>
 
+    <script>
+    sessionStorage.getItem('id');
+    perfil = document.getElementById('nombre').innerText = 'perfil';
+    </script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
