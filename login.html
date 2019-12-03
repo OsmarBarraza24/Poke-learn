@@ -1,15 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<script>
-const nombre;
-const apellido;
-const correo;
-const psw;
-
-document.getElementById('send').onclick = function(){
-    
-};
-</script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -39,7 +29,7 @@ document.getElementById('send').onclick = function(){
             <div class="row">
                 <div class="col-lg-4">
                         <label for="nombre">Nombre</label>
-                        <input type="texr" class="form-control" id="nombre">
+                        <input type="text" class="form-control" id="nombre">
                         <label for="apellido">Apellido</label>
                         <input type="text" class="form-control" id="apellido">
                         <label for="correo">Correo</label>
@@ -55,6 +45,30 @@ document.getElementById('send').onclick = function(){
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+
+
+        document.getElementById('send').onclick = async function(e){
+            e.preventDefault();
+            const nombre = document.getElementById("nombre").value;
+            const apellido = document.getElementById("apellido").value;
+            const correo = document.getElementById("correo").value;
+            const psw = document.getElementById("psw").value;
+        
+            const data = {nombre, apellido, correo, psw};
+            const options = {
+                method: 'POST',
+                headers:{
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            };
+            fetch("http://192.168.0.11:3000/addUser", options).then(response =>{
+                console.log(response);
+            });
+        
+        };
+        </script>
 </body>
 
 </html>
