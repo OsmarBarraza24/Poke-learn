@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+const nombre;
+const apellido;
+const correo;
+const psw;
 
+document.getElementById('send').onclick = function(){
+    
+};
+</script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,7 +19,7 @@
     <title>¡Aprende con Pokemón!</title>
 </head>
 <body>
-        <nav class="navbar navbar-expand-sm navbar-light fixed-top ">
+        <nav class="navbar navbar-expand-sm navbar-light">
                 <a href="#" class="navbar-brand">Poke-Learn</a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#pokeNav">
                     <span class="navbar-toggler-icon"></span>
@@ -24,7 +33,25 @@
                         <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
                     </ul>
             </nav>
-  <img style="opacity: 0.5;" class="img-fluid " src="images/background1.jpg" alt="">
+<div class="container">
+    <div class="form" method="post">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-lg-4">
+                        <label for="nombre">Nombre</label>
+                        <input type="texr" class="form-control" id="nombre">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" id="apellido">
+                        <label for="correo">Correo</label>
+                        <input type="email" class="form-control" id="correo">
+                        <label for="password">Contraseña</label>
+                        <input type="password" class="form-control" id="psw"> <br>
+                        <input type="submit" name="Registrarse" id="send" class="btn btn-danger">
+                </div>
+            </div>          
+        </div>
+    </div>
+</div>
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

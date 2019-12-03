@@ -141,7 +141,7 @@ if (document.readyState == 'loading') {
     ready();
 }
 
-function ready() {
+function ready() {                              
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
     let game = new MixOrMatch(60, cards);
