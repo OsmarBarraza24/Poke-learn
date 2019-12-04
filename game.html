@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,21 +11,23 @@
   <script src="js/game.js" async></script>
   <title>Mix-Or-Match</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light fixed-top ">
-        <a href="#" class="navbar-brand">Poke-Learn</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#pokeNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="pokeNav" class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a  class="nav-link" href="index.html">Inicio</a></li>
-                <li class=" nav-item"><a class="nav-link" href="games.html">Juegos</a></li>
-                <li class="nav-item"></li>
-                <li class="nav-item"><a class="nav-link" href="aprendiendo.html">Aprendiendo</a></li>
-                <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
-            </ul>
-    </nav>
+  <nav class="navbar navbar-expand-sm navbar-light fixed-top ">
+    <a href="#" class="navbar-brand">Poke-Learn</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#pokeNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="pokeNav" class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto"">
+                <li class=" nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class=" nav-item"><a class="nav-link" href="games.html">Juegos</a></li>
+        <li class="nav-item"></li>
+        <li class="nav-item"><a class="nav-link" href="aprendiendo.html">Aprendiendo</a></li>
+        <li class="nav-item"><a id="perfil" data-toggle="modal" data-target="#exampleModal" class="nav-link"
+            href="perfil.html">Inicia sesión</a></li>
+      </ul>
+  </nav>
   <h1 class="page-title">¡Gira y recuerda!</h1>
   <div class="overlay-text visible">
     Haz click para iniciar
@@ -52,36 +55,7 @@
         <img style="margin-top: 40%;" height="100px" class="spider" src="Assets/Images/pokebola.jpg">
       </div>
       <div class="card-front card-face">
-        <img style="margin-top: 5%;" height="100px"  class="card-value" src="Assets/Images/squirtle.png">
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-back card-face">      
-        <img style="margin-top: 40%;" height="100px" class="spider" src="Assets/Images/pokebola.jpg">
-      </div>
-      <div class="card-front card-face">
-   
-        <img style="margin-top: 5%;" height="100px"  class="card-value" src="Assets/Images/squirtle.png">
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-back card-face">
-       
-        <img style="margin-top: 40%;" height="100px" class="spider" src="Assets/Images/pokebola.jpg">
-      </div>
-      <div class="card-front card-face">
-     
-        <img style="margin-top: 5%;" height="100px"  class="card-value" src="Assets/Images/Charmander.png">
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-back card-face">
-    
-        <img style="margin-top: 40%;" height="100px" class="spider" src="Assets/Images/pokebola.jpg">
-      </div>
-      <div class="card-front card-face">
-      
-        <img style="margin-top: 5%;" height="100px"  class="card-value" src="Assets/Images/Charmander.png">
+        <img style="margin-top: 5%;" height="100px" class="card-value" src="Assets/Images/squirtle.png">
       </div>
     </div>
     <div class="card">
@@ -89,87 +63,116 @@
         <img style="margin-top: 40%;" height="100px" class="spider" src="Assets/Images/pokebola.jpg">
       </div>
       <div class="card-front card-face">
-  
+
+        <img style="margin-top: 5%;" height="100px" class="card-value" src="Assets/Images/squirtle.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+
+        <img style="margin-top: 40%;" height="100px" class="spider" src="Assets/Images/pokebola.jpg">
+      </div>
+      <div class="card-front card-face">
+
+        <img style="margin-top: 5%;" height="100px" class="card-value" src="Assets/Images/Charmander.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+
+        <img style="margin-top: 40%;" height="100px" class="spider" src="Assets/Images/pokebola.jpg">
+      </div>
+      <div class="card-front card-face">
+
+        <img style="margin-top: 5%;" height="100px" class="card-value" src="Assets/Images/Charmander.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img style="margin-top: 40%;" height="100px" class="spider" src="Assets/Images/pokebola.jpg">
+      </div>
+      <div class="card-front card-face">
+
         <img style="margin-top: 5%;" height="100px" class="card-value" src="Assets/Images/pikachu.png">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-        
+
         <img style="margin-top: 40%;" height="100px" class="spider" src="Assets/Images/pokebola.jpg">
       </div>
       <div class="card-front card-face">
 
-        <img style="margin-top: 5%;" height="100px"  class="card-value" src="Assets/Images/pikachu.png">
+        <img style="margin-top: 5%;" height="100px" class="card-value" src="Assets/Images/pikachu.png">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-     
+
         <img style="margin-top: 40%;" height="100px" class="spider" src="Assets/Images/pokebola.jpg">
       </div>
       <div class="card-front card-face">
-        
-        <img style="margin-top: 5%;" height="100px"  class="card-value" src="Assets/Images/piplup.png">
+
+        <img style="margin-top: 5%;" height="100px" class="card-value" src="Assets/Images/piplup.png">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-        
+
         <img style="margin-top: 40%;" height="100px" class="spider" src="Assets/Images/pokebola.jpg">
       </div>
       <div class="card-front card-face">
-      
-        <img style="margin-top: 5%;" height="100px"  class="card-value" src="Assets/Images/piplup.png">
+
+        <img style="margin-top: 5%;" height="100px" class="card-value" src="Assets/Images/piplup.png">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-       
+
         <img style="margin-top: 40%;" height="100px" class="spider" src="Assets/Images/pokebola.jpg">
       </div>
       <div class="card-front card-face">
-       
+
         <img style="margin-top: 5%;" height="100px" class="card-value" src="Assets/Images/chikorita.png">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-      
+
         <img style="margin-top: 40%;" height="100px" class="spider" src="Assets/Images/pokebola.jpg">
       </div>
       <div class="card-front card-face">
-       
+
         <img style="margin-top: 5%;" height="100px" class="card-value" src="Assets/Images/chikorita.png">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-        
+
         <img style="margin-top: 40%;" height="100px" class="spider" src="Assets/Images/pokebola.jpg">
       </div>
       <div class="card-front card-face">
-       
+
         <img style="margin-top: 5%;" height="100px" class="card-value" src="Assets/Images/psyduck.png">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-        
+
         <img style="margin-top: 40%;" height="100px" class="spider" src="Assets/Images/pokebola.jpg">
       </div>
       <div class="card-front card-face">
-       
+
         <img style="margin-top: 5%;" height="100px" class="card-value" src="Assets/Images/psyduck.png">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-        
+
         <img style="margin-top: 40%;" height="100px" class="spider" src="Assets/Images/pokebola.jpg">
       </div>
       <div class="card-front card-face">
-       
+
         <img style="margin-top: 5%;" height="100px" class="card-value" src="Assets/Images/mudkip.png">
       </div>
     </div>
@@ -178,27 +181,27 @@
         <img style="margin-top: 40%;" height="100px" class="spider" src="Assets/Images/pokebola.jpg">
       </div>
       <div class="card-front card-face">
-       
+
         <img style="margin-top: 5%;" height="100px" class="card-value" src="Assets/Images/mudkip.png">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
- 
+
         <img style="margin-top: 40%;" height="100px" class="spider" src="Assets/Images/pokebola.jpg">
       </div>
       <div class="card-front card-face">
-    
-        <img  style="margin-top: 5%;" height="100px" class="card-value" src="Assets/Images/torchic.png">
+
+        <img style="margin-top: 5%;" height="100px" class="card-value" src="Assets/Images/torchic.png">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-       
+
         <img style="margin-top: 40%;" height="100px" class="spider" src="Assets/Images/pokebola.jpg">
       </div>
       <div class="card-front card-face">
-       
+
         <img style="margin-top: 5%;" height="100px" class="card-value" src="Assets/Images/torchic.png">
       </div>
     </div>
@@ -212,8 +215,10 @@
       </div>
     </div>
   </div>
+
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
 </body>
+
 </html>

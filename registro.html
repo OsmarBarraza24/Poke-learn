@@ -39,7 +39,7 @@
                         <input type="email" class="form-control" id="correo">
                         <label for="password">Contraseña</label>
                         <input type="password" class="form-control" id="psw"> <br>
-                        <input style="display:block;margin: 10px auto" type="submit" name="Registrarse" id="send" class="btn btn-danger">
+                        <input value = "Registrarse"style="display:block;margin: 10px auto" type="submit" name="Registrarse" id="send" class="btn btn-danger">
                 </div>
             </div>          
         </div>
@@ -70,14 +70,25 @@
             const json = await response.json();
             console.log(json);
             if(json.msg == "thank you"){
-                sessionStorage.setItem("id", json.id);
+                sessionStorage.setItem('id',json.id);
+                sessionStorage.setItem('nombre',json.nombre);
+                sessionStorage.setItem('apellido',json.apellido);
                 window.location.replace("index.html");
             }else{
                 console.log("Tienes algo mal, revisalo");
             }
         };
-
         </script>
+
+<script>
+    
+        puto = sessionStorage.getItem('nombre');
+        if (sessionStorage.getItem('id')) {
+            document.getElementById('perfil').innerText = puto;
+        }
+
+
+    </script>
 </body>
 
 </html>
