@@ -1,4 +1,6 @@
 console.log('server is starting');
+global.fetch = require("node-fetch");
+
 
 var express = require('express');
 var bodyParser = require('body-parser');
@@ -21,15 +23,12 @@ connection.connect((error) =>{
 });
 
 var server = app.listen(3000, listening);
-
 function listening(){
     console.log('listening...');
 }
 
-app.use(bodyParser.json());
+app.use(express.json({limit:'1mb'}));
 
-// create application/x-www-form-urlencoded parser
-app.use(bodyParser.urlencoded({ extended: false }));
 
 app.post('/addUser', (request, response) =>{
     var nombre = request.body.nombre;
@@ -89,4 +88,51 @@ app.post('/Login', (request, response) =>{
           });
     }
 
+});
+
+app.post('/pokeAnimales', async function(request, response){
+    const data = await fetch("https://pokeapi.co/api/v2/pokemon-species/rattata/");
+    const data2 = await fetch("https://pokeapi.co/api/v2/pokemon-species/piplup/");
+    const data3 = await fetch("https://pokeapi.co/api/v2/pokemon-species/rayquaza/");
+    const json = await data.json();
+    const json2 = await data2.json();
+    const json3 = await data3.json();
+    var numero1;
+    var numero2;
+    var numero3;
+    for (let i = 0; i < json.pokedex_numbers.length; i++) {
+        if (json.pokedex_numbers[i].pokedex.name === "national") {
+            numero1 = json.pokedex_numbers[i].entry_number;
+        }
+    }
+    for (let i = 0; i < json2.pokedex_numbers.length; i++) {
+        if (json2.pokedex_numbers[i].pokedex.name === "national") {
+            numero2 = json2.pokedex_numbers[i].entry_number;
+        }
+    }
+    for (let i = 0; i < json3.pokedex_numbers.length; i++) {
+        if (json3.pokedex_numbers[i].pokedex.name === "national") {
+            numero3 = json3.pokedex_numbers[i].entry_number;
+        }
+    }
+
+
+    var respuesta = [
+        {
+            nombre: json.name,
+            descrpicion: json.flavor_text_entries[4].flavor_text,
+            numero: numero1
+        },
+        {
+            nombre: json2.name,
+            descrpicion: json2.flavor_text_entries[3].flavor_text,
+            numero: numero2
+        },
+        {
+            nombre: json3.name,
+            descrpicion: json3.flavor_text_entries[3].flavor_text,
+            numero: numero3
+        }
+    ];
+    response.send(respuesta);
 });
