@@ -184,6 +184,33 @@
             document.getElementById('perfil').innerText = puto;
         }
     </script>
+    <script>
+            document.getElementById('send').onclick = async function(e){
+            e.preventDefault();
+            const correo = document.getElementById("correo").value;
+            const psw = document.getElementById("psw").value;
+        
+            const data = {correo, psw};
+            const options = {
+                method: 'POST',
+                headers:{
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            };
+            const response = await fetch("http://192.168.0.11:3000/Login", options);
+            const json = await response.json();
+            console.log(json);
+            if(json.msg !== "You´ve got something wrong, please check"){
+                sessionStorage.setItem('id',json.id);
+                sessionStorage.setItem('nombre',json.nombre);
+                sessionStorage.setItem('apellido',json.apellido);
+                window.location.replace("index.html");
+            }else{
+                console.log("Tienes algo mal, revisalo");
+            }
+        };
+    </script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

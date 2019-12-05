@@ -10,7 +10,7 @@ var app = express();
 var connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'perron12',
+    password: 'npokp1rt',
     database: 'pokelearndb'
 });
 
