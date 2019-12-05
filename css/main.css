@@ -90,6 +90,7 @@ header{
 
 .card{
 transition:all .1s;
+margin:10px
 }
 
 .card:hover{
