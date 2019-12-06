@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
+
 <body>
-        <nav class="navbar navbar-expand-sm navbar-light">
-                <a href="#" class="navbar-brand">Poke-Learn</a>
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#pokeNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="pokeNav" class="collapse navbar-collapse">
-                    <ul class="navbar-nav mr-auto"">
-                                <li class=" nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class=" nav-item"><a class="nav-link" href="games.html">Juegos</a></li>
-                        <li class="nav-item"></li>
-                        <li class="nav-item"><a class="nav-link" href="aprendiendo.html">Aprendiendo</a></li>
-                        <li class="nav-item"><a id="perfil" data-toggle="modal" data-target="#exampleModal" class="nav-link"
-                                href="perfil.html">Inicia sesión</a></li>
-                    </ul>
-            </nav>
+    <div class="mynav">
+            <nav class="navbar navbar-expand-sm navbar-light">
+                    <a href="#" class="navbar-brand">Poke-Learn</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#pokeNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="pokeNav" class="collapse navbar-collapse">
+                        <ul class="navbar-nav mr-auto"">
+                                            <li class=" nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                            <li class=" nav-item"><a class="nav-link" href="games.html">Juegos</a></li>
+                            <li class="nav-item"></li>
+                            <li class="nav-item"><a class="nav-link" href="aprendiendo.html">Aprendiendo</a></li>
+                            <li class="nav-item"><a id="perfil" data-toggle="modal" data-target="#exampleModal" class="nav-link"
+                                    href="perfil.html">Inicia sesión</a></li>
+                        </ul>
+                </nav>
+    </div>
     <div style="margin-top: 2rem;" class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -33,15 +38,65 @@
             <div class="col text-center">
                 <img height="250" src="images/chikorita.png" alt="">
             </div>
-          <div class="w-100"></div>
-          <div class="col-lg-12 text-center">
-            <p class="tierra">Tierra</p>
-          </div>
         </div>
     </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-3 col-sm-4 text-center ">
+            <p class="tierra">Tierra</p>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="bg-danger" scope="col"># Pokedex</th>
+                    <th class="bg-primary" scope="col">Peso</th>
+                    <th class="bg-info" scope="col">Altura</th>
+                    <th class="bg-warning" scope="col">Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="table-danger" scope="row">1</th>
+                    <td class="table-primary">3.14 KG</td>
+                    <td class="table-info">0.60 M</td>
+                    <td class="table-warning">Le gusta mucho andar por el parque y tomar el sol cuando esta muy cansado</td>
+                </tr>
+            </tbody>
+        </table>
 
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="display-3">Galería de imagenes</h1>
+            </div>
+        </div>
+        <div class="row justify-content-around text-center" style="margin-top: 80x;">
+            <div class="col-lg-4">
+                <a data-fancybox="gallery" data-caption="Chikorita uno" href="images/chikorita.png">
+                    <img class="mycard" height="200" src="images/chikorita.png"
+                        alt="...">
+                </a>
+
+            </div>
+            <div class="col-lg-4">
+                    <a data-fancybox="gallery" data-caption="Chikorita 2" href="images/chikorita.png">
+                        <img class="mycard" height="200" src="images/chikorita.png"
+                            alt="...">
+            </div>
+            <div class="col-lg-4">
+                    <a data-fancybox="gallery" data-caption="Chicorita 3" href="images/chikorita.png">
+                        <img class="mycard" height="200" src="images/chikorita.png"
+                            alt="...">
+            </div>
+        </div>
+    </div>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
 </body>
+
 </html>
