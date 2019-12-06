@@ -109,5 +109,17 @@ box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
 }
 
 .hidden{
-    visibility: ;
+    visibility:hidden ;
+}
+
+.tierra{
+    background-color: greenyellow;
+    color: black;
+    font-size: 16px;
+    letter-spacing: 3px;
+    padding: 5px;
+}
+
+.mycard{
+    
 }
