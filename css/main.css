@@ -1,3 +1,8 @@
+body{
+    background-size:cover;
+    background-repeat: no-repeat
+}
+
 @import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');
 
 .text-justify{
@@ -112,10 +117,53 @@ box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
     visibility:hidden ;
 }
 
-.tierra{
+.planta{
     background-color: greenyellow;
     color: black;
-    font-size: 16px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+
+.electrico{
+        background-color: rgba(252, 247, 0, 0.849);
+        color: black;
+        font-size: 12px;
+        letter-spacing: 3px;
+        padding: 5px;
+
+}
+
+.tierra{
+        background-color: rgba(189, 124, 3, 0.479);
+        color: black;
+        font-size: 12px;
+        letter-spacing: 3px;
+        padding: 5px;
+}
+
+.fuego{
+    background-color: rgba(250, 0, 0, 0.788);
+    color: black;
+    font-size: 12px;
+    letter-spacing: 3px;
+    padding: 5px;
+}
+
+.agua{
+    background-color: rgba(18, 21, 211, 0.788);
+    color: black;
+    font-size: 12px;
+    letter-spacing: 3px;
+    padding: 5px;
+}
+
+.normal{
+    background-color: rgba(102, 102, 109, 0.788);
+    color: black;
+    font-size: 12px;
     letter-spacing: 3px;
     padding: 5px;
 }
@@ -126,3 +174,6 @@ box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
     padding: 30px;
 }
 
+a{
+    text-decoration: none;
+}

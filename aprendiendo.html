@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Pokemons</title>
 </head>
 
@@ -68,85 +68,149 @@
         </div>
     </div>
 
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4">Pokemons</h1>
-            <p class="lead">Mira cada pokemón que tenemos registrado y aprende un poco sobre su contraparte en la vida
-                real</p>
+    <div style="margin-top: 4rem;" class="container">
+        <div class="row justify-content-sm-center">
+            <div class="col-lg-12">
+                <h2 >Pokédex</h2>
+                <hr>
+            </div>
+        </div>  
+        <div class="row text-center d-flex justify-content-start">
+            <div class="col-lg-6 col-sm-1">
+                <input id="sent" onclick="random()" class="btn btn-primary" value="¡Sorprendeme!" type="submit">
+            </div>
+            <div class="col-lg-6 col-sm-1">   
+                <button class="btn btn-success">Volver al inicio</button>
+            </div>
         </div>
-    </div>
-
-    <div class="container">
-        <div class="row justify-content-between">
-            <div class="col ">
+        <div class="row">
+            <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="images/pikachu.png" class="card-img-top" alt="...">
+                    <img height="230" width="200" src="images/Bulbasaur.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                      <p style="font-weight:600 ;" class="card-text">#001</p>
+                      <h4 class="card-text">Bulbasaur</h4>
+                      <p class="planta text-center">Planta</p>
                     </div>
-                </div>
+                    <p></p>
+                  </div>
             </div>
             <div class="col">
-                <div class=" card" style="width: 18rem;">
-                <img src="images/pikachu.png" class="card-img-top" alt="...">
+              <a href="pokemon/pikachu.html"><div class="card" style="width: 18rem;">
+                <img height="230" width="200" src="images/pikachu.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
+                    <p style="font-weight:600 ;" class="card-text">#025</p>
+                    <h4 class="card-text">Pikachu</h4>
+                    <p class="electrico text-center">Electrico</p>
                 </div>
+              </div></a>  
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img height="230" width="200" src="images/piplup.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p style="font-weight:600 ;" class="card-text">#025</p>
+                     <h4 class="card-text">Piplup</h4>
+                     <p class="agua text-center">Agua</p>
+                    </div>
+                  </div>
+            </div>
+            <div data-aos="fade-up" class="col">
+                <div class="card" style="width: 18rem;">
+                    <img height="230" width="200" src="images/Charmander.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p style="font-weight:600 ;" class="card-text">#025</p>
+                        <h4 class="card-text">Charmander</h4>
+                        <p class="fuego text-center">Fuego</p>
+                    </div>
+                  </div>
+            </div>
+            <div data-aos="fade-up" class="col">
+                <div  class="card" style="width: 18rem;">
+                    <img height="230" width="200" src="images/mudkip.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p style="font-weight:600 ;" class="card-text">#025</p>
+                        <h4 class="card-text">Mudkip</h4>
+                        <p class="agua text-center">Agua</p>
+                    </div>
+                  </div>
+            </div>
+            <div data-aos="fade-up" class="col">
+                <div class="card" style="width: 18rem;">
+                    <img height="230" width="200" src="images/psyduck.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p style="font-weight:600 ;" class="card-text">#025</p>
+                        <h4 class="card-text">Rattata</h4>
+                        <p class="normal text-center">Normal</p>
+                    </div>
+                  </div>
+            </div>
+            <div data-aos="fade-up" class="col">
+                <div class="card" style="width: 18rem;">
+                    <img height="230" width="200" src="images/shanshu.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p style="font-weight:600 ;" class="card-text">#025</p>
+                        <h4 class="card-text">Sandshrew </h4>
+                        <p class="tierra text-center">Tierra</p>
+                    </div>
+                  </div>
+            </div>
+            <div data-aos="fade-up" class="col">
+                <div class="card" style="width: 18rem;">
+                    <img height="230" width="200" src="images/puff.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p style="font-weight:600 ;" class="card-text">#025</p>
+                        <h4 class="card-text">Jigglypuff</h4>
+                        <p class="normal text-center">Normal</p>
+                    </div>
+                  </div>
+            </div>
+            <div data-aos="fade-up" class="col">
+                <div class="card" style="width: 18rem;">
+                    <img height="230" width="200" src="images/flareon.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p style="font-weight:600 ;" class="card-text">#025</p>
+                        <h4 class="card-text">Flareon</h4>
+                        <p class="fuego text-center">Fuego</p>
+                    </div>
+                  </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="images/pikachu.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="images/pikachu.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="images/pikachu.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div  data-aos="fade-up" class="card" style="width: 18rem;">
-                <img src="images/pikachu.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
-                </div>
-            </div>
-        </div>
+        
     </div>
-    </div>
-    </div>
-
+    
+    
     <script>
         nombre = sessionStorage.getItem('nombre');
         if (sessionStorage.getItem('id')) {
             document.getElementById('perfil').innerText = nombre;
         }
+
+
+    
+
+function random(){
+    document.getElementById("sent");
+    var numero =Math.floor(Math.random() * 3);
+    if(numero == 0){
+            window.location.replace("pokemon/bulbasaur.html");
+        }else if (numero == 1) {
+            window.location.replace("pokemon/pikachu.html")
+        }else{
+            window.location.replace("pokemon/piplup.html")
+        }
+
+}    
     </script>
 
     <script src="bower_components/aos/dist/aos.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 
 </html>
