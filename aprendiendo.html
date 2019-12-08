@@ -71,15 +71,21 @@
     <div style="margin-top: 4rem;" class="container">
         <div class="row justify-content-sm-center">
             <div class="col-lg-12">
-                <h2 >Pokédex</h2>
-                <hr>
+                <h2 style="background-color: rgba(255, 0, 0, 0.637);" class="display-4">Pokédex</h2>
+   
             </div>
-        </div>  
+            <div class="col">
+                <p style="background-color: rgba(255, 217, 4, 0.774);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eligendi alias, voluptas nihil
+                    deleniti illum itaque fugiat quo! Maiores, quidem!</p>
+                    <hr>
+            </div>
+            <hr>
+        </div>
         <div class="row text-center d-flex justify-content-start">
             <div class="col-lg-6 col-sm-1">
                 <input id="sent" onclick="random()" class="btn btn-primary" value="¡Sorprendeme!" type="submit">
             </div>
-            <div class="col-lg-6 col-sm-1">   
+            <div class="col-lg-6 col-sm-1">
                 <button class="btn btn-success">Volver al inicio</button>
             </div>
         </div>
@@ -88,32 +94,34 @@
                 <div class="card" style="width: 18rem;">
                     <img height="230" width="200" src="images/Bulbasaur.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <p style="font-weight:600 ;" class="card-text">#001</p>
-                      <h4 class="card-text">Bulbasaur</h4>
-                      <p class="planta text-center">Planta</p>
+                        <p style="font-weight:600 ;" class="card-text">#001</p>
+                        <h4 class="card-text">Bulbasaur</h4>
+                        <p class="planta text-center">Planta</p>
                     </div>
                     <p></p>
-                  </div>
+                </div>
             </div>
             <div class="col">
-              <a href="pokemon/pikachu.html"><div class="card" style="width: 18rem;">
-                <img height="230" width="200" src="images/pikachu.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p style="font-weight:600 ;" class="card-text">#025</p>
-                    <h4 class="card-text">Pikachu</h4>
-                    <p class="electrico text-center">Electrico</p>
-                </div>
-              </div></a>  
+                <a href="pokemon/pikachu.html">
+                    <div class="card" style="width: 18rem;">
+                        <img height="230" width="200" src="images/pikachu.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p style="font-weight:600 ;" class="card-text">#025</p>
+                            <h4 class="card-text">Pikachu</h4>
+                            <p class="electrico text-center">Electrico</p>
+                        </div>
+                    </div>
+                </a>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
                     <img height="230" width="200" src="images/piplup.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <p style="font-weight:600 ;" class="card-text">#025</p>
-                     <h4 class="card-text">Piplup</h4>
-                     <p class="agua text-center">Agua</p>
+                        <p style="font-weight:600 ;" class="card-text">#025</p>
+                        <h4 class="card-text">Piplup</h4>
+                        <p class="agua text-center">Agua</p>
                     </div>
-                  </div>
+                </div>
             </div>
             <div data-aos="fade-up" class="col">
                 <div class="card" style="width: 18rem;">
@@ -123,17 +131,17 @@
                         <h4 class="card-text">Charmander</h4>
                         <p class="fuego text-center">Fuego</p>
                     </div>
-                  </div>
+                </div>
             </div>
             <div data-aos="fade-up" class="col">
-                <div  class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem;">
                     <img height="230" width="200" src="images/mudkip.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p style="font-weight:600 ;" class="card-text">#025</p>
                         <h4 class="card-text">Mudkip</h4>
                         <p class="agua text-center">Agua</p>
                     </div>
-                  </div>
+                </div>
             </div>
             <div data-aos="fade-up" class="col">
                 <div class="card" style="width: 18rem;">
@@ -143,7 +151,7 @@
                         <h4 class="card-text">Rattata</h4>
                         <p class="normal text-center">Normal</p>
                     </div>
-                  </div>
+                </div>
             </div>
             <div data-aos="fade-up" class="col">
                 <div class="card" style="width: 18rem;">
@@ -153,7 +161,7 @@
                         <h4 class="card-text">Sandshrew </h4>
                         <p class="tierra text-center">Tierra</p>
                     </div>
-                  </div>
+                </div>
             </div>
             <div data-aos="fade-up" class="col">
                 <div class="card" style="width: 18rem;">
@@ -163,7 +171,7 @@
                         <h4 class="card-text">Jigglypuff</h4>
                         <p class="normal text-center">Normal</p>
                     </div>
-                  </div>
+                </div>
             </div>
             <div data-aos="fade-up" class="col">
                 <div class="card" style="width: 18rem;">
@@ -173,13 +181,13 @@
                         <h4 class="card-text">Flareon</h4>
                         <p class="fuego text-center">Fuego</p>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
-        
+
     </div>
-    
-    
+
+
     <script>
         nombre = sessionStorage.getItem('nombre');
         if (sessionStorage.getItem('id')) {
@@ -187,20 +195,20 @@
         }
 
 
-    
 
-function random(){
-    document.getElementById("sent");
-    var numero =Math.floor(Math.random() * 3);
-    if(numero == 0){
-            window.location.replace("pokemon/bulbasaur.html");
-        }else if (numero == 1) {
-            window.location.replace("pokemon/pikachu.html")
-        }else{
-            window.location.replace("pokemon/piplup.html")
-        }
 
-}    
+        function random() {
+            document.getElementById("sent");
+            var numero = Math.floor(Math.random() * 3);
+            if (numero == 0) {
+                window.location.replace("pokemon/bulbasaur.html");
+            } else if (numero == 1) {
+                window.location.replace("pokemon/pikachu.html")
+            } else {
+                window.location.replace("pokemon/piplup.html")
+            }
+
+        }    
     </script>
 
     <script src="bower_components/aos/dist/aos.js"></script>
@@ -208,9 +216,9 @@ function random(){
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
