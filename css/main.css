@@ -174,10 +174,17 @@ box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
     padding: 30px;
 }
 
-a, u{
-    text-decoration: none;
+a{
+    text-decoration: none!important;
 }
 
 hr { display: block; height: 1px;
     border: 0; border-top: 1px solid rgb(47, 44, 238);
     margin: 1em 0; padding: 0; }
+
+    .circle{
+        border-radius: 360px;
+        border: 5px solid black;
+        height:440px;
+        width: 440px;
+    }
