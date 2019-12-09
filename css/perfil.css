@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Tomorrow:300,400&display=swap');
+
+body{
+    font-family: 'Tomorrow', sans-serif;
+}
+
+#head{
+    height: 300px;
+    background-image: url("../images/background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    background-color: slategrey;
+    background-blend-mode: screen;
+}
+
+#user-info{
+    margin-left: 20px;
+}
+
+#user-info ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-align: inherit;
+}
+
+#atrapados{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#border{
+    background-color: red;
+    color:white;
+    padding:20px;
+    border-color: 0.10px;
+    text-align: center;
+}
