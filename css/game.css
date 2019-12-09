@@ -1,14 +1,4 @@
-@font-face {
-    font-family: "Creepy";
-    src: url("Assets/Fonts/Creepy.woff") format("woff"),
-         url("Assets/Fonts/Creepy.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "Lunacy";
-    src: url("Assets/Fonts/Lunacy.woff") format("woff"),
-         url("Assets/Fonts/Lunacy.woff2") format("woff2");
-}
+@import url('https://fonts.googleapis.com/css?family=Tomorrow:400,600&display=swap');
 
 * {
   box-sizing: border-box;
@@ -25,6 +15,7 @@ body {
   background: transparent;
   background-image: url("../images/end.jpg");
   background-size: cover;
+  font-family: 'Tomorrow', sans-serif;
 }
 
 .page-title {
