@@ -1,6 +1,11 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-size:cover;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    
 }
 
 @import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');
@@ -188,4 +193,6 @@ a{
     }
 
   
- 
+ #inicio{
+
+ }

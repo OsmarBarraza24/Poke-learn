@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Piplup</title>
 </head>
 
 <body>
-    <div class="mynav">
+    <div id="inicio"  class="mynav">
             <nav class="navbar navbar-expand-sm navbar-light">
                     <a href="#" class="navbar-brand">Poke-Learn</a>
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#pokeNav">
@@ -40,13 +40,17 @@
                 <img height="250" src="../images/piplup.png" alt="">
             </div>
         </div>
+        <div class="row justify-content-center">
+                <div class="col-lg-3 col-sm-4 text-center ">
+                    <p class="agua">Agua</p>
+                </div>
     </div>
-    <div class="row justify-content-center">
-        <div class="col-lg-3 col-sm-4 text-center ">
-            <p class="agua">Agua</p>
-        </div>
+  
     </div>
     </div>
+
+
+
     <div class="container-fluid">
         <table class="table">
             <thead>
@@ -78,14 +82,14 @@ class="container-fluid vh-100">
         <h1>Este pokemón es muy parecido a... un
             <strong>pingüino azul</strong></h1>
     </div>
-    <div data-aos-duration="1000" data-aos-delay="1500" data-aos="fade-left" class="col-lg-6">
+    <div data-aos-duration="1000" data-aos-delay="1500" data-aos="fade-left" class="col-lg-6 align-self-end">
         <img class="text-center circle" src="../images/pingu.jpg" alt="">
     </div>
 </div>
 </div>
 
 <div data-aos-delay="500" data-aos="fade-in" style="background-color:rgba(182, 233, 209, 0.8)"
-class="container-fluid vh-100">
+class="container-fluid">
 <div class="row">
     <div style="margin-top:30px" class="col-lg-12 text-center">
         <h1 class="display-3">Eudyptula minor</h1>
@@ -99,8 +103,8 @@ class="container-fluid vh-100">
             <strong>Eudyptula minor</strong> Los pingüinos azules, conocidos también como pingüinos pequeños o pingüino del hada, son la especie de pingüinos más pequeña y viven en las costas de Nueva Zelanda y las islas Chatham, al igual que en el sur de Australia y Tasmania.
         </p>
     </div>
-    <div data-aos-duration="800" data-aos-delay="800" data-aos="fade-left" class="col-lg-5 align-self-start">
-        <img src="../images/pingu1.png" alt="" width="420px">
+    <div data-aos-duration="800" data-aos-delay="800" data-aos="fade-left" class="col-lg-5 align-self-center">
+        <img src="../images/pingu1.png" alt="" height="300">
     </div>
     <div class="w-100"></div>
     <br>
@@ -120,38 +124,59 @@ class="container-fluid vh-100">
 
 </div>
 
-<div data-aos-delay="500" data-aos="fade-in" style="background-color: rgba(93, 127, 178, 0.8);" class="container-fluid vh-100">
-    <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Galeria de imagenes</h1>
-    <hr class="mt-2 mb-5">
-    <div class="row text-center text-lg-left">
-        <div class="col-lg-3 col-md-4 col-6">
-            <a data-fancybox="images" data-caption="Rata convencional" href="../images/rata1.jpg" class="d-block mb-4 h-100">
+<div data-aos-delay="500" data-aos="fade-in" style="background-color: rgba(93, 127, 178, 0.8);" class="container-fluid">
+    <div style="padding: 30px;" class="row text-center text-lg-left">
+        <div class="col">
+            <h1>Galeria de imagenes</h1>
+        </div>
+        <div class="w-100"></div>
+        <div data-aos-delay="800" data-aos="fade-up" class="col-lg-3 col-md-4 col-6">
+            <a data-fancybox="images" data-caption="Rata convencional" href="../images/pingu2.jpg" class="d-block mb-4 h-100">
                 <img  class="img-fluid img-thumbnail" src="../images/pingu2.jpg" alt="">
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-6">
-            <a  data-fancybox="images" data-caption="Rata convencional" href="../images/rata2.jpg" class="d-block mb-4 h-100">
+        <div data-aos-delay="1000" data-aos="fade-up" class="col-lg-3 col-md-4 col-6">
+            <a  data-fancybox="images" data-caption="Rata convencional" href="../images/pingu3.jpg" class="d-block mb-4 h-100">
                 <img class="img-fluid img-thumbnail" src="../images/pingu3.jpg" alt="">
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-6">
-            <a   data-fancybox="images" data-caption="Rata convencional" href="../images/rata3.jpg" class="d-block mb-4 h-100">
+        <div data-aos-delay="1200" data-aos="fade-up" class="col-lg-3 col-md-4 col-6">
+            <a   data-fancybox="images" data-caption="Rata convencional" href="../images/pingu4.jpg" class="d-block mb-4 h-100">
                 <img class="img-fluid img-thumbnail" src="../images/pingu4.jpg" alt="">
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-6">
-            <a   data-fancybox="images" data-caption="Rata convencional" href="../images/rata4.jpg" class="d-block mb-4 h-100">
+        <div data-aos-delay="1400" data-aos="fade-up" class="col-lg-3 col-md-4 col-6">
+            <a   data-fancybox="images" data-caption="Rata convencional" href="../images/pingu5.jpg" class="d-block mb-4 h-100">
                 <img class="img-fluid img-thumbnail" src="../images/pingu5.jpg" alt="">
             </a>
         </div>
     </div>
 </div>
+<div data-aos="fade-id" data-aos-delay="500" style="padding:20px;background-color:rgba(182, 233, 209, 0.8); ;" class="container-fluid">
+        <div class="row">
+            <div data-aos-duration="1000" data-aos-delay="500" data-aos="fade-up" class="col-lg-12 text-center">
+                    <h4>¡Hey! También tenemos un video para complementar esta lectura!</h4>
+            </div>
+            <br>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" class="col text-center">
+                    <a data-fancybox href=https://www.youtube.com/watch?v=MKg4hgchhzc">
+                        <img height="500" src="../images/imagen.png" alt="">
+                    </a>
+            </div>
+        </div>
+        <div style="margin-top: 20px;" class="row">
+                <div class="col-lg-12 text-center">
+                    <a class="btn btn-primary" href="#inicio">Volver al inicio</a>
+                </div>
+    </div>
 
 
+   
+    </div>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/jquery-3.4.1.min.js"></script>
-    <script src="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
 </body>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
